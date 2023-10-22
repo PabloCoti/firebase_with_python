@@ -14,6 +14,7 @@ class ToDoList(QMainWindow):
         self.ref = firebase.ref
 
         self.update_list_item()
+        
         self.add_todo.clicked.connect(self.add)
         self.edit_todo.clicked.connect(self.edit)
         self.delete_todo.clicked.connect(self.delete)
